@@ -1,4 +1,4 @@
-package DSA;
+package DSA.Day1;
 
 // sort the array elements
 import java.util.*;

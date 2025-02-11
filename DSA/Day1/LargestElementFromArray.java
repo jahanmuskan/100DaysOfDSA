@@ -1,4 +1,4 @@
-package DSA;
+package DSA.Day1;
 // Write a program to find first and second largest element from am array
 
 public class LargestElementFromArray {
