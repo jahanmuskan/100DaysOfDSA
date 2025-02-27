@@ -15,8 +15,11 @@ class Solution {
        // To handle case when k is greater than length of the array
        k = k % n; 
 
+       // To reverse the whole array 
        reverse(nums, 0, n-1);
+       // To reverse the array from 0th position to upto k-1
        reverse(nums, 0, k-1);
+       // To reverse the array from kth position to upto the last element of the array
        reverse(nums, k, n-1);
     }
 }
