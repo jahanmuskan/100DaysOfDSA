@@ -34,7 +34,7 @@ class Solution {
         return true; // The list is a palindrome
     }
 
-    // ✅ Helper method to reverse a linked list
+    // Helper method to reverse a linked list
     private ListNode reverseList(ListNode head) {
         ListNode prev = null, current = head, nextNode;
         while (current != null) {
