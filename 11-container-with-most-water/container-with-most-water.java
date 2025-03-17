@@ -9,13 +9,32 @@ class Solution {
         // }
         
         // return maxArea;
+        // int left = 0, right = height.length - 1;
+        // int maxArea = 0;
+
+        // while (left < right) {
+        //     int h = height[left] < height[right] ? height[left++] : height[right--]; 
+        //     int width = right - left + 1;
+        //     int area = h * width;
+
+        //     if (area > maxArea) {
+        //         maxArea = area;
+        //     }
+        // }
+        // return maxArea;
         int left = 0, right = height.length - 1;
-        int maxArea = 0;
+        int maxArea = 0, h, width, area;
 
         while (left < right) {
-            int h = height[left] < height[right] ? height[left++] : height[right--]; 
-            int width = right - left + 1;
-            int area = h * width;
+            width = right - left;  
+            
+            if (height[left] < height[right]) {
+                h = height[left++];
+            } else {
+                h = height[right--];
+            }
+
+            area = h * width;
 
             if (area > maxArea) {
                 maxArea = area;
